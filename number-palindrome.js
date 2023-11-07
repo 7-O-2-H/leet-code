@@ -8,7 +8,7 @@ const isPalindrome = function(x) {
   // Reduce input to absolute value
   const input = Math.abs(x);
 
-  // Simple function to digits f number to array
+  // Simple function to convert digits from number to array
   const converter = num => Number(num); 
   const intArr = Array.from(String(input), converter); 
   
