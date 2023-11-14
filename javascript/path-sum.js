@@ -1,3 +1,4 @@
+// Create TreeNode class
 class TreeNode {
   constructor(val, left = null, right = null) {
     this.val = val;
@@ -5,20 +6,25 @@ class TreeNode {
     this.right = right;
   }
 }
+
+// Main function
 const hasPathSum = function (root, targetSum) {
 
+  // Return false if no root node
     if (!root) {
       return false;
     }
 
+  // If there are no left and right nodes and the value of the leaf is equal to the reduced target sum, return true
   if (!root.left && !root.right && root.val === targetSum) {
     return true;
   }
 
-  // Recursively check the left and right subtrees
+  // Recursively check the left and right subtrees and reduce the target sum by the value of the node value
   const leftResult = hasPathSum(root.left, targetSum - root.val);
   const rightResult = hasPathSum(root.right, targetSum - root.val);
 
+  // Return true if either left or right path's nodes are equal to the reduced target sum
   return leftResult || rightResult;
   
 };
