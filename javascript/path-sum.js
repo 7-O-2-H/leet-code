@@ -8,12 +8,12 @@ class TreeNode {
 }
 
 // Main function
-const hasPathSum = function (root, targetSum) {
+const hasPathSum = function(root, targetSum) {
 
   // Return false if no root node
-    if (!root) {
-      return false;
-    }
+  if (!root) {
+    return false;
+  }
 
   // If there are no left and right nodes and the value of the leaf is equal to the reduced target sum, return true
   if (!root.left && !root.right && root.val === targetSum) {
@@ -52,7 +52,7 @@ root.right.right.right = new TreeNode(1);
 const targetSum = 22;
 
 Output: true
-console.log(hasPathSum(root, targetSum)); 
+console.log(hasPathSum(root, targetSum));
 */
 
 
