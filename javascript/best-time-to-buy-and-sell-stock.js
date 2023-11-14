@@ -3,13 +3,13 @@
 const maxProfit = function(prices) {
 
   // Initialize minPrice and maxProfit variables
-    let minPrice = Infinity;
-    let maxProfit = 0;
+  let minPrice = Infinity;
+  let maxProfit = 0;
 
   // Loop through prices to maintain minimum price and maxProfit via comparison
   for (let i = 0; i < prices.length; i++) {
-      minPrice = Math.min(minPrice, prices[i]);
-      maxProfit = Math.max(maxProfit, prices[i] - minPrice);
+    minPrice = Math.min(minPrice, prices[i]);
+    maxProfit = Math.max(maxProfit, prices[i] - minPrice);
   }
 
   // Return maxProfit
