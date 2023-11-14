@@ -32,13 +32,13 @@ const hasPathSum = function(root, targetSum) {
 /*
 Example usage:
 Construct a sample binary tree
-    5
-   / \
-  4   8
- /   / \
-11  13  4
-/  \      \
-7   2      1
+        5
+       / \
+      4   8
+     /   / \
+    11  13  4
+   /  \      \
+  7    2      1
 const root = new TreeNode(5);
 root.left = new TreeNode(4);
 root.right = new TreeNode(8);
