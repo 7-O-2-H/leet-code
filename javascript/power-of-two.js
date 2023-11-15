@@ -15,3 +15,10 @@ const isPowerOfTwo = function(n) {
 
   return false;
 };
+
+// Sample usage:
+
+console.log(isPowerOfTwo(156));
+console.log(isPowerOfTwo(1));
+console.log(isPowerOfTwo(128));
+console.log(isPowerOfTwo(65536));
