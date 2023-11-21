@@ -13,3 +13,9 @@ const findMaxConsecutiveOnes = function(nums) {
   }
   return highestOnes;
 };
+
+// Example usage
+const testArr1 = [1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1];
+const testArr2 = [1, 2, 1, 1, 0, 3];
+console.log(findMaxConsecutiveOnes(testArr1));
+console.log(findMaxConsecutiveOnes(testArr2));
