@@ -12,10 +12,8 @@ const findMaxConsecutiveOnes = function(nums) {
       // Increase count if number is equal to one, if count is higher than current count of ones, assign it to highestOnes var
       if (nums[i] === 1) {
           count++;
-          if (count > highestOnes) {
-              highestOnes = count;
-          }
-
+          highestOnes = Math.max(highestOnes, count);
+          
       // Reset count if number is not equal to one
       } else {
           count = 0;
@@ -27,9 +25,9 @@ const findMaxConsecutiveOnes = function(nums) {
 };
 
 // Example usage
-/*
+// /*
 const testArr1 = [1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1];
 const testArr2 = [1, 2, 1, 1, 0, 3];
 console.log(findMaxConsecutiveOnes(testArr1));
 console.log(findMaxConsecutiveOnes(testArr2));
-*/
+// */
