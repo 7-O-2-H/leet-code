@@ -11,9 +11,11 @@ Given the integer array candyType of length n, return the maximum number of diff
 
 const distributeCandies = function(candyType) {
     
+  // Declare variables to keep track of number of unique candies and n / 2
   let typesOfCandy = 1;
   const doctorsAllowance = candyType.length / 2;
 
+  // Nested loop to establish number of unique elements to represent types of candy
   for (let i = 1; i < candyType.length; i++) {
       let j = 0;
       for (j = 0; j < candyType.length; j++) {
@@ -27,5 +29,6 @@ const distributeCandies = function(candyType) {
       }
   }
 
+  // Return min of n / 2 as doctorAllowance or typesOfCandy
   return Math.min(typesOfCandy, doctorsAllowance);
 };
