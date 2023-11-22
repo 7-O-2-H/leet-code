@@ -1,6 +1,6 @@
 /*
 Problem:
-Alice has n candies, where the ith candy is of type candyType[i]. 
+Alice has n candies, where the ith candy is of type candyType[i].
 Alice noticed that she started to gain weight, so she visited a doctor.
 
 The doctor advised Alice to only eat n / 2 of the candies she has (n is always even). A
@@ -18,17 +18,17 @@ const distributeCandies = function(candyType) {
   // Nested loop to establish number of unique elements to represent types of candy
   for (let i = 1; i < candyType.length; i++) {
 
-      let j = 0;
+    let j = 0;
 
-      for (j = 0; j < candyType.length; j++) {
-          if (candyType[i] === candyType[j]) {
-              break;
-          }
+    for (j = 0; j < candyType.length; j++) {
+      if (candyType[i] === candyType[j]) {
+        break;
       }
+    }
 
-      if (i === j) {
-          typesOfCandy++;
-      }
+    if (i === j) {
+      typesOfCandy++;
+    }
   }
 
   // Return min of n / 2 as doctorAllowance or typesOfCandy
