@@ -46,3 +46,12 @@ const checkRecord = function(s) {
 
     return false;
 };
+
+// Example usage
+/*
+const studentRecord1 = 'PPALLP';
+const studentRecord2 = 'PPALLL';
+
+console.log(checkRecord(studentRecord1));
+console.log(checkRecord(studentRecord2));
+*/
