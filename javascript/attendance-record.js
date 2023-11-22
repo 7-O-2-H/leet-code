@@ -11,46 +11,31 @@ The student was never late ('L') for 3 or more consecutive days.
 Return true if the student is eligible for an attendance award, or false otherwise.
 */
 
-// Function to determine maximum number of consecutive Ls in an array
-const maxConsecutiveLs = function(nums) {
-
-  // Var  to track highest number of consecutive Ls
-  let maxLs = 0;
-  // Var to track current count of Ls
-  let count = 0;
-
-  // Loop through array
-  for (let i = 0; i < nums.length; i++) {
-
-    // Increase count if element is 'L'; assign count to maxLs if it's higher than current maxLs; else reset count
-    if (nums[i] === 'L') {
-      count++;
-      maxLs = Math.max(maxLs, count);
-          
-    } else {
-      count = 0;
-    }
-  }
-
-  return maxLs;
-};
-
 // Main function
 const checkRecord = function(s) {
 
     // Convert string to array
     const sArray = s.split('');
 
-    // Call maxConsecutiveLs on newly created array and store in maxLs var
-    const maxLs = maxConsecutiveLs(sArray)
+    // Var  to track highest number of consecutive Ls
+    let maxLs = 0;
 
     // Dec var to ccount number of absences 'A';
     let aCount = 0;
 
-    // Loop through array and increase aCount if element is 'A'
+    // Var to track current count of Ls
+    let lCount = 0;
+
+    // Loop through array and increase aCount if element is 'A', increase lCount if element is 'L', assign lCount to maxLs if it is greater than maxLs, else reset lCount
     for (let i = 0; i < sArray.length; i++) {
         if(sArray[i] === 'A') {
             aCount++;
+        }
+        if (sArray[i] === 'L') {
+            lCount++
+            maxLs = Math.max(maxLs, lCount);
+        } else {
+          lCount = 0;
         }
     }
 
