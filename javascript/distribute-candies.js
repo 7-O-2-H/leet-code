@@ -17,7 +17,9 @@ const distributeCandies = function(candyType) {
 
   // Nested loop to establish number of unique elements to represent types of candy
   for (let i = 1; i < candyType.length; i++) {
+
       let j = 0;
+
       for (j = 0; j < candyType.length; j++) {
           if (candyType[i] === candyType[j]) {
               break;
@@ -32,3 +34,14 @@ const distributeCandies = function(candyType) {
   // Return min of n / 2 as doctorAllowance or typesOfCandy
   return Math.min(typesOfCandy, doctorsAllowance);
 };
+
+// Example usage
+/*
+const case1 = [1, 1, 2, 2, 3, 3];
+const case2 = [1, 1, 2, 3];
+const case3 = [6, 6, 6, 6];
+
+console.log(distributeCandies(case1));
+console.log(distributeCandies(case2));
+console.log(distributeCandies(case3));
+*/
