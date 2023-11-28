@@ -13,14 +13,21 @@ Otherwise the function should return false.
 // Main Function
 
 const twoSum = function(nums, target) {
+
+  // Nested loop to establish every sum of two unique elements
   for (let i = 0; i < nums.length; i++) {
+
     let j = i + 1;
     for (j; j < nums.length; j++) {
+
+      // Compare sum against target and return indices if true
       if (nums[i] + nums[j] === target) {
         return [i, j];
       }
     }
   }
+
+  // Return false if no elements sum to target
   return false;
 };
 
