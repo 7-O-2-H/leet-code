@@ -17,7 +17,7 @@ const plusOne = function(digits) {
   for (let i = n - 1; i >= 0; i--) {
 
     // Increase last element of array by one
-    digits[i]++
+    digits[i]++;
 
     // If element is increased to 10, change element to 0, else break
     if (digits[i] === 10) {
@@ -29,20 +29,20 @@ const plusOne = function(digits) {
 
   // If first element is 0 add a preceding 1 to the array
   if (digits[0] === 0) {
-    digits.unshift(1)
+    digits.unshift(1);
   }
 
   // Return modified digits array
   return digits;
 
-}
+};
 
-/* 
+/*
 
 Example Usage
 const digits1 = [1, 2, 3];
 const digits2 = [4, 3, 2, 1];
-const digits3 = [9, 9]; 
+const digits3 = [9, 9];
 
 console.log(plusOne(digits1)); // Rerturns [1, 2, 4]
 console.log(plusOne(digits2)); // Returns [4, 3, 2, 2]
