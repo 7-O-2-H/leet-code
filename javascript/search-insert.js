@@ -13,14 +13,14 @@ const searchInsert = function(nums, target) {
   // Loop through nums and return n if element is equal to or greater than target
   while (n < nums.length) {
     if (nums[n] >= target) {
-        return n;
+      return n;
     }
-    n++
+    n++;
   }
 
   // Return n to indicate insertion at the end of array if target is greater than all elements
   return n;
-}
+};
 
 /* Ecxample usage:
 const nums1 = [1, 3, 5, 6];
