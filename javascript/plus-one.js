@@ -29,3 +29,16 @@ const plusOne = function(digits) {
   return digits;
 
 }
+
+/* 
+
+Example Usage
+const digits1 = [1, 2, 3];
+const digits2 = [4, 3, 2, 1];
+const digits3 = [9, 9]; 
+
+console.log(plusOne(digits1)); // Rerturns [1, 2, 4]
+console.log(plusOne(digits2)); // Returns [4, 3, 2, 2]
+console.log(plusOne(digits3)); // Returns [1, 0, 0]
+
+*/
