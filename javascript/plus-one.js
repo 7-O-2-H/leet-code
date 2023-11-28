@@ -10,11 +10,16 @@ Increment the large integer by one and return the resulting array of digits.
 
 const plusOne = function(digits) {
 
+  // Dec var equal to array length
   const n = digits.length;
 
+  // Loop through elements of digits array starting at the end
   for (let i = n - 1; i >= 0; i--) {
+
+    // Increase last element of array by one
     digits[i]++
 
+    // If element is increased to 10, change element to 0, else break
     if (digits[i] === 10) {
       digits[i] = 0;
     } else {
@@ -22,10 +27,12 @@ const plusOne = function(digits) {
     }
   }
 
+  // If first element is 0 add a preceding 1 to the array
   if (digits[0] === 0) {
     digits.unshift(1)
   }
 
+  // Return modified digits array
   return digits;
 
 }
