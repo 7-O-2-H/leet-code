@@ -12,16 +12,20 @@ The final sorted array should not be returned by the function, but instead be st
 
 // Main Function:
 const merge = function(nums1, m, nums2, n) {
+
+  // Create altered first array using nums1 and m
   const newArray1 = nums1.slice(0, m);
-  // console.log(newArray1);
+
+  // Create second altered array using nums2 and n
   const newArray2 = nums2.slice(0, n);
+
+  // Concantenate arrays into one buffer array
   const newArray = newArray1.concat(newArray2);
   
+  // Return the sorted, sliced, concantenated array
   return res = newArray.sort(function(a, b) {
       return a - b;
   })
-  
-
   
 };
 
