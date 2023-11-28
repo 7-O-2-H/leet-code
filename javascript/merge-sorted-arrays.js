@@ -29,4 +29,10 @@ const merge = function(nums1, m, nums2, n) {
   
 };
 
-console.log(merge([1,2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+/* Example Usage:
+*/
+const arr1 = [1, 2, 3, 0, 0, 0];
+const m = 3;
+const arr2 = [2, 5, 6];
+const n = 3;
+console.log(merge(arr1, m, arr2, n));
