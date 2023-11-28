@@ -23,16 +23,16 @@ const merge = function(nums1, m, nums2, n) {
   const newArray = newArray1.concat(newArray2);
   
   // Return the sorted, sliced, concantenated array
-  return res = newArray.sort(function(a, b) {
-      return a - b;
-  })
+  return newArray.sort(function(a, b) {
+    return a - b;
+  });
   
 };
 
 /* Example Usage:
-*/
 const arr1 = [1, 2, 3, 0, 0, 0];
 const m = 3;
 const arr2 = [2, 5, 6];
 const n = 3;
 console.log(merge(arr1, m, arr2, n));
+*/
