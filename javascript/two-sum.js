@@ -23,3 +23,12 @@ const twoSum = function(nums, target) {
   }
   return false;
 };
+
+/* Example usage
+const nums1 = [2, 7, 11, 15];
+const target1 = 9;
+const nums2 = [3, 3];
+const target2 = 5;
+console.log(twoSum(nums1, target1));
+console.log(twoSum(nums2, target2));
+*/
