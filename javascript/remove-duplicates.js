@@ -14,5 +14,10 @@ const removeDuplicates = function(nums) {
   return newArr;
 };
 
-// Test cases
+/* Test cases
 
+const testCase = [1, 1, 2];
+const testCase2 = [0, 0, 0, 1, 1, 2, 3, 3, 4, 4, 4];
+console.log(removeDuplicates(testCase));
+console.log(removeDuplicates(testCase2));
+*/
