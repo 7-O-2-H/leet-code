@@ -1,8 +1,8 @@
 /*
 Problem Description:
 
-Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. 
-The relative order of the elements should be kept the same. 
+Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.
+The relative order of the elements should be kept the same.
 Then return the number of unique elements in nums.
 
 */
@@ -16,14 +16,14 @@ const removeDuplicates = function(nums) {
 
   // Loop through elements starting with element at index 1 and compare to previous value, add to newArr if unique and update comparison value
   for (let i = 1; i < nums.length; i++) {
-      if (nums[i] !== comparisonVal) {
-          newArr.push(nums[i]);
-          comparisonVal = nums[i];
-      }
+    if (nums[i] !== comparisonVal) {
+      newArr.push(nums[i]);
+      comparisonVal = nums[i];
+    }
   }
 
   return newArr;
-  
+
 };
 
 /* Test cases
