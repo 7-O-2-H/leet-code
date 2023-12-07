@@ -10,10 +10,10 @@ const containsDuplicate = function(nums) {
 
   // Loop through elements of nums and check set for element. Return true if element is in the set else add the number to the set.
   for (const num of nums) {
-      if (numSet.has(num)) {
-          return true;
-      }
-      numSet.add(num);
+    if (numSet.has(num)) {
+      return true;
+    }
+    numSet.add(num);
   }
 
   // Return false if no duplicate found.
