@@ -3,17 +3,18 @@ Given an integer array nums, return true if any value appears at least twice in 
 */
 
 const containsDuplicate = function(nums) {
-  for (let i = 0; i < nums.length; i++) {
-      let checkElement = nums[i];
-      for (let j = i + 1; j < nums.length; j++) {
-          if (checkElement === nums[j]) {
-              return true;
-          }
+  const numSet = new Set();
+
+  for (const num of nums) {
+      if (numSet.has(num)) {
+          return true;
       }
+      numSet.add(num);
   }
 
   return false;
 };
+
 
 // Test Cases
 
