@@ -15,7 +15,7 @@ Each range [a,b] in the list should be output as:
 // Main function
 const summaryRanges = function(nums) {
   if (nums.length === 0) {
-      return [];
+    return [];
   }
 
   const result = [];
@@ -23,15 +23,15 @@ const summaryRanges = function(nums) {
   let end = nums[0];
 
   for (let i = 1; i < nums.length; i++) {
-      if (nums[i] === end + 1) {
-          // Extend the current range
-          end = nums[i];
-      } else {
-          // End of current range, add to result
-          result.push(formatRange(start, end));
-          // Start a new range
-          start = end = nums[i];
-      }
+    if (nums[i] === end + 1) {
+      // Extend the current range
+      end = nums[i];
+    } else {
+      // End of current range, add to result
+      result.push(formatRange(start, end));
+      // Start a new range
+      start = end = nums[i];
+    }
   }
 
   // Add the last range to the result
@@ -41,9 +41,9 @@ const summaryRanges = function(nums) {
 };
 
 // This function formats the ranges into the format 'start -> end'
-function formatRange(start, end) {
+const formatRange = function(start, end) {
   return start === end ? `${start}` : `${start}->${end}`;
-}
+};
 
 // Test cases
 
