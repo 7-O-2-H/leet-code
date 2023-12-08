@@ -44,3 +44,12 @@ const summaryRanges = function(nums) {
 function formatRange(start, end) {
   return start === end ? `${start}` : `${start}->${end}`;
 }
+
+// Test cases
+
+/*
+nums1 = [0,1,2,4,5,7];
+nums2 = [0,2,3,4,6,8,9];
+console.log(summaryRanges(nums1));
+console.log(summaryRanges(nums2));
+*/
