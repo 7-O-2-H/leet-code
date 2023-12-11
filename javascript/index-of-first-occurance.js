@@ -8,24 +8,24 @@ const strStr = function(haystack, needle) {
 
   // Return 0 if needle is empty string
   if (needle === '') {
-      return 0; // Empty needle is always present at the beginning
+    return 0; // Empty needle is always present at the beginning
   }
 
   // Loop through haystack and compare indexes of needle and haystack
   for (let i = 0; i <= haystack.length - needle.length; i++) {
-      let match = true;
+    let match = true;
 
-      for (let j = 0; j < needle.length; j++) {
-          if (haystack[i + j] !== needle[j]) {
-              match = false;
-              break;
-          }
+    for (let j = 0; j < needle.length; j++) {
+      if (haystack[i + j] !== needle[j]) {
+        match = false;
+        break;
       }
+    }
 
-      // Return i (index of first element of needle) if match is true
-      if (match) {
-          return i;
-      }
+    // Return i (index of first element of needle) if match is true
+    if (match) {
+      return i;
+    }
   }
 
   return -1; // Needle not found in haystack
