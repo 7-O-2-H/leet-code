@@ -1,5 +1,4 @@
-class Solution:
-    def mySqrt(self, x: int) -> int:
+def mySqrt(x) -> int:
         if x == 0 or x == 1:
             return x
             
@@ -10,3 +9,9 @@ class Solution:
             continue
         
         return i - 1
+
+# Test cases
+'''
+print(mySqrt(7))
+print(mySqrt(180))
+'''
