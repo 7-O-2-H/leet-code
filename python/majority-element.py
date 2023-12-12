@@ -5,7 +5,7 @@ The majority element is the element that appears more than ⌊n / 2⌋ times. Yo
 '''
 
 # Main function
-def majorityElement(self, nums: List[int]) -> int:
+def majorityElement(nums):
     candidate = nums[0]
     count = 1
     
@@ -21,3 +21,8 @@ def majorityElement(self, nums: List[int]) -> int:
     
     # Return most frequent candidate
     return candidate
+
+# Example usage:
+nums = [3, 3, 4, 2, 4, 4, 2, 4, 4]
+result = majorityElement(nums)
+print(f"The majority element is: {result}")
