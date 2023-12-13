@@ -5,16 +5,16 @@ Given an integer array nums, return true if any value appears at least twice in 
 
 # Main function
 def containsDuplicate(nums):
-        # Loop through nums
-        for i in range(len(nums)):
+    # Loop through nums
+    for i in range(len(nums)):
             
-            # Store num in check element and compare (loop again through nums) with future elements to see if there's a duplicate
-            check_element = nums[i]
-            for j in range(i + 1, len(nums)):
-                if check_element == nums[j]:
-                    return True
+    # Store num in check element and compare (loop again through nums) with future elements to see if there's a duplicate
+        check_element = nums[i]
+        for j in range(i + 1, len(nums)):
+            if check_element == nums[j]:
+                return True
                 
-        return False
+    return False
 
 # Example usage:
 '''
