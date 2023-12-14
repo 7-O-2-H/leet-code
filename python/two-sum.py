@@ -1,4 +1,4 @@
-def twoSum(self, nums: List[int], target: int) -> List[int]:
+def twoSum(nums, target):
         num_indices = {}
 
         for i, num in enumerate(nums):
@@ -11,3 +11,10 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
 
         # No solution found
         return None
+
+# Example usage:
+
+nums = [2, 7, 11, 15]
+target = 9
+result = twoSum(nums, target)
+print(f"Indices of the two numbers: {result}")
