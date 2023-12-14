@@ -7,18 +7,18 @@ You can return the answer in any order.
 
 # Main function:
 def twoSum(nums, target):
-        num_indices = {}
-        # Loop through elements of nums
-        for i, num in enumerate(nums):
-            complement = target - num
+    num_indices = {}
+    # Loop through elements of nums
+    for i, num in enumerate(nums):
+        complement = target - num
 
-            if complement in num_indices:
-                return [num_indices[complement], i]
+        if complement in num_indices:
+            return [num_indices[complement], i]
 
-            num_indices[num] = i
-
-        # No solution found
-        return None
+        num_indices[num] = i
+      
+    # No solution found
+    return None
 
 # Example usage:
 '''
