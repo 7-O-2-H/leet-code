@@ -21,3 +21,8 @@ def is_power_of_two(n):
     
   return False
 
+# Example usage
+n = 16
+m = 6
+print (is_power_of_two(n))
+print (is_power_of_two(m))
