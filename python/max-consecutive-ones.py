@@ -21,3 +21,11 @@ def find_max_consecutive_ones(nums):
       count = 0
 
   return highest_ones
+
+# Example usage
+
+nums1 = [1, 1, 0, 1, 1, 1, 1, 2]
+nums2 = [1, 0, 1, 1, 0, 1, 2]
+
+print (find_max_consecutive_ones(nums1))
+print (find_max_consecutive_ones(nums2))
